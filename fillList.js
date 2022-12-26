@@ -49,7 +49,6 @@ const translate = (sourceText) => {
   let targetLang = 'en';
 
   let url = "https://translate.googleapis.com/translate_a/single?client=gtx&sl=" + sourceLang + "&tl=" + targetLang + "&dt=t&q=" + encodeURI(sourceText);
-  console.log(url);
 
   $.getJSON(url, (data) => {
     doApi(data[0][0][0]);
