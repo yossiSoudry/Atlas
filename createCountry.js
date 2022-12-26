@@ -4,9 +4,6 @@ import { renderIsrael } from "./renderIsrael.js";
 
 // call two APIs and receive the data country.
 export const doApi = async(_country) => {
-  // if (_country == 'USA' || _country == 'usa' || _country == 'U.S.A.'){
-  //   _country = 'United States of America';
-  // }
   if (_country == 'israel' || _country == 'Israel' || _country == 'ISRAEL' || _country == 'ישראל'){
     return renderIsrael();
   }
