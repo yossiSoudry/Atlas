@@ -2,6 +2,7 @@ import { countriesObj } from "./countries.js";
 import { initMap } from "./map.js";
 import { clickButtons } from "./app.js";
 
+// country class
 export default class Country {
   constructor(_parent, _item1, _item2) {
     this.parent = _parent;
